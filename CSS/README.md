@@ -33,7 +33,7 @@
        <html>
            <head>
    			<style>
-                   /* h1 {color: red;} h1에 해당하는 글자색 변경이나 typora의 ## 전체에 작용하여 주석처리*/
+                   h1 {color: red;}
                    /* p {background: aqua;} 본문 배경을 aqua로 지정하는 것인데 typora 전체에서 작용하여 주석처리*/ 
                </style>
            </head>
