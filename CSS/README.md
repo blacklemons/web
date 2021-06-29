@@ -33,8 +33,8 @@
        <html>
            <head>
    			<style>
-                   h1 {color: red;}
-                   p {background: aqua;} 
+                   /* h1 {color: red;} h1에 해당하는 글자색 변경이나 typora의 ## 전체에 작용하여 주석처리*/
+                   /* p {background: aqua;} 본문 배경을 aqua로 지정하는 것인데 typora 전체에서 작용하여 주석처리*/ 
                </style>
            </head>
            <body>
@@ -51,8 +51,10 @@
    <!DOCTYPE html>
        <html>
            <body>
-               <h1 style="color:red">Hello World</h1>
-               <p style="background:aqua">This is a web page</p>
+               <!--<h1 style="color:red">Hello World</h1> typora 전체에 적용하기에 주석처리-->
+               <h1>Hello World</h1>
+               <!--<p style="background:aqua">This is a web page</p> typora 전체에 적용하기에 주석처리-->
+               <p>This is a web page</p>
            </body>
    	</html>
    </!doctype>
@@ -83,7 +85,7 @@
       <html>
           <head>
               <style>
-                  * {color:blue;}
+                  /* * {color:blue;} typora 전체에 color를 blue로 바꾸어 주석처리*/
               </style>
           </head>
           <body>
@@ -103,7 +105,7 @@
       <html>
           <head>
               <style>
-                  p {color:blue;}
+                  /* p {color:blue;} typora 전체에 p의 color를 blue로 바꾸어 주석처리*/
               </style>
           </head>
           <body>
@@ -143,23 +145,23 @@
 
 - class 값이 일치하는 요소에 적용
 
-<!DOCTYPE html>
-    <html>
-        <head>
-            <style>
-                .container{ color : red;}
-            </style>
-        </head>
-        <body>
-            <h1>Hello World</h1>
-            <p>This is a web page</p>
-            <div class="container">
-                <p id="p1">This is a web page1</p>
-                <p id="p2">This is a web page2</p>
-            </div>
-                <p id="p3">This is a web page3</p>
-        </body>
-  </html>
+  <!DOCTYPE html>
+      <html>
+          <head>
+              <style>
+                  .container{ color : red;}
+              </style>
+          </head>
+          <body>
+              <h1>Hello World</h1>
+              <p>This is a web page</p>
+              <div class="container">
+                  <p id="p1">This is a web page1</p>
+                  <p id="p2">This is a web page2</p>
+              </div>
+                  <p id="p3">This is a web page3</p>
+          </body>
+    </html>
 
 - class 값을 이용한 셀렉터는 동시 여러개 지정 가능
 
@@ -187,8 +189,8 @@
   <!DOCTYPE html>
       <html>
           <head>
-  			      <style>
-                  div p {color:red;}
+  			<style>
+                  /*div p {color:red;} 원래는 <div>tag 하위 요소의 <p>에만 적용되어야하는데 그렇지 않아 주석*/
               </style>
           </head>
           <body>
