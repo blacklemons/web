@@ -34,7 +34,7 @@
            <head>
    			<style>
                    h1 {color: red;}
-                   /* p {background: aqua;} 본문 배경을 aqua로 지정하는 것인데 typora 전체에서 작용하여 주석처리*/ 
+                   p {background: aqua;} 
                </style>
            </head>
            <body>
@@ -51,10 +51,8 @@
    <!DOCTYPE html>
        <html>
            <body>
-               <!--<h1 style="color:red">Hello World</h1> typora 전체에 적용하기에 주석처리-->
-               <h1>Hello World</h1>
-               <!--<p style="background:aqua">This is a web page</p> typora 전체에 적용하기에 주석처리-->
-               <p>This is a web page</p>
+               <h1 style="color:red">Hello World</h1>
+               <p style="background:aqua">This is a web page</p>
            </body>
    	</html>
    </!doctype>
@@ -85,7 +83,7 @@
       <html>
           <head>
               <style>
-                  /* * {color:blue;} typora 전체에 color를 blue로 바꾸어 주석처리*/
+                  * {color:blue;}
               </style>
           </head>
           <body>
@@ -105,7 +103,7 @@
       <html>
           <head>
               <style>
-                  /* p {color:blue;} typora 전체에 p의 color를 blue로 바꾸어 주석처리*/
+                  p {color:blue;}
               </style>
           </head>
           <body>
@@ -189,8 +187,8 @@
   <!DOCTYPE html>
       <html>
           <head>
-  			<style>
-                  /*div p {color:red;} 원래는 <div>tag 하위 요소의 <p>에만 적용되어야하는데 그렇지 않아 주석*/
+  			      <style>
+                  div p {color:red;}
               </style>
           </head>
           <body>
