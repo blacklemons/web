@@ -143,23 +143,23 @@
 
 - class 값이 일치하는 요소에 적용
 
-  <!DOCTYPE html>
-      <html>
-          <head>
-              <style>
-                  .container{ color : red;}
-              </style>
-          </head>
-          <body>
-              <h1>Hello World</h1>
-              <p>This is a web page</p>
-              <div class="container">
-                  <p id="p1">This is a web page1</p>
-                  <p id="p2">This is a web page2</p>
-              </div>
-                  <p id="p3">This is a web page3</p>
-          </body>
-    </html>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                .container{ color : red;}
+            </style>
+        </head>
+        <body>
+            <h1>Hello World</h1>
+            <p>This is a web page</p>
+            <div class="container">
+                <p id="p1">This is a web page1</p>
+                <p id="p2">This is a web page2</p>
+            </div>
+                <p id="p3">This is a web page3</p>
+        </body>
+  </html>
 
 - class 값을 이용한 셀렉터는 동시 여러개 지정 가능
 
