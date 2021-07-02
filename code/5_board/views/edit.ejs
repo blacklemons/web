@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/edit_2?board_No=<%=board.No%>" method="POST">
+            제목 : <input type="text" value="<%=board.title%>" name="title"><br>
+            내용 : <textarea name="content" cols="30" rows="10"><%=board.content%></textarea><br>
+            <input type="submit" value="저장">
+        </form>
+    </body>
+</html>

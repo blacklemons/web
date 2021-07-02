@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script>
+            function popup(message){
+                location.href = "/content?board_No="+message;
+            }
+        </script>
+    </head>
+    <body>
+        <ul>
+            <table class="table table-hover">
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                </tr>
+                <% if(boards.length==0){ %>
+                    <tr>
+                        <td colspan="2">해당 게시판에 글이 없습니다</td>
+                    </tr>
+                <% }else{ %>
+
+                <% for(var i=0; i < boards.length; i++){ %>
+                    <tr onclick="popup('<%=boards[i].No%>')">
+                        <th><%=boards[i].No%></th>
+                        <th><%=boards[i].title%></th>
+                    </tr>
+                <% }} %>
+
+                <!-- <% boards.forEach(function(board,index){ %>
+                    <tr onclick="popup('<%=board.No%>')">
+                        <th><%=board.No%></th>
+                        <th><%=board.title%></th>
+                    </tr>
+                <% }) %> -->
+            </table>
+        </ul>
+        <button onclick="javascript:location.href='/write'" class="btn btn-primary">write</button>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function popup(message){
+                location.href = "/manager/search?car_id="+message;
+            }
+        </script>
+    </head>
+    <body>
+        <ul>
+            <table border="1">
+                <tr>
+                    <th>차량 번호</th>
+                </tr>
+                <!-- <% for(var i = 0; i < cars.length; i++){ %>
+                    <tr>
+                        <th><%=cars[i].car_id%></th>
+                        <th><%=cars[i].car_div%></th>
+                        <th><%=cars[i].car_type%></th>
+                        <th><%=cars[i].car_birth%></th>
+                        <th><%=cars[i].car_day%></th>
+                        <th><%=cars[i].car_result%></th>
+                    </tr>
+                <% } %> -->
+                <% for(var car of cars){ %>
+                    <tr onclick="popup('<%=car.car_id%>')">
+                        <th><%=car.car_id%></th>
+                    </tr>
+                <% } %>
+            </table>
+    </body>
+</html>
