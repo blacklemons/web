@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+        <style>
+            .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            }
+
+            @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+            }
+        </style>
+        <script>
+            function login(){
+                location.href = "/login";
+            }
+            function signup(){
+                location.href = "/login/signup";
+            }
+        </script>
+        <%- include("./head.ejs") %>
+    </head>
+    <body>
+        <%- include("./nav.ejs") %>
+        <div id="main_p" style="vertical-align: middle;">
+            <div class="p-3 text-center">
+                <main class="px-3">
+                <h1>Main Page</h1>
+                    <p class="lead">
+                        <button onclick="login()" class="btn btn-lg btn-secondary fw-bold border-white bg-black">login</button>
+                        <button onclick="signup()" class="btn btn-lg btn-secondary fw-bold border-white bg-black">signup</button>
+                    </p>
+                </main>
+
+                <footer class="mt-auto text-white-50">
+                    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

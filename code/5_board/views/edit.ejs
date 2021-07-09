@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <form action="/edit_2?board_No=<%=board.No%>" method="POST">
-            제목 : <input type="text" value="<%=board.title%>" name="title"><br>
-            내용 : <textarea name="content" cols="30" rows="10"><%=board.content%></textarea><br>
-            <input type="submit" value="저장">
+    <head>
+        <script>
+            function board_list(){
+                location.href = "/board/content?board_No=<%=board.No%>";
+            }
+        </script>
+        <%- include("./head.ejs") %>
+    </head>
+    <body> 
+        <%- include("./nav.ejs") %>
+        <form action="/board/edit_2?board_No=<%=board.No%>" method="POST">
+            <input type="text" value="<%=board.post_id%>" name="post_id" hidden required>
+            제목 : <input type="text" value="<%=board.title%>" name="title" required><br>
+            내용 : <textarea name="content" cols="30" rows="10" required><%=board.content%></textarea><br>
+            이미지 URL : <input type="text" value="<%=board.img%>" name="img"><br>
+            <input type="submit" class="btn btn-primary" value="저장">
         </form>
+        <button onclick="board_list()" class="btn btn-primary">되돌아가기</button>
     </body>
 </html>

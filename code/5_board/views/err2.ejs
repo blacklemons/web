@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function popup(message){
+                switch(message){
+                    case '1':
+                        alert("아이디나 비밀번호가 올바르지 않습니다.");
+                        break;
+                    case '2':
+                        alert("작성자와 ID가 같지 않습니다.");
+                        break;
+                    case '3':
+                        alert("사용할 수 없는 ID 입니다.");
+                        break;
+                    case '4':
+                        alert("댓글 추가 실패");
+                    default:
+                        alert("알 수 없는 에러");
+                        break;
+                }
+                
+                window.history.back();
+            }
+        </script>
+    </head>
+    <body onload="popup('<%=err%>')">
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    vertical-align: middle;
+}
+  
+.navbar {
+    margin-bottom: 20px;
+}
+
+#main_p {
+  height:500px;
+  background-color: green;
+}
